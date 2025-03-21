@@ -38,7 +38,7 @@ const RecipeDetailsPage = () => {
       <div className="px-4 md:px-10">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center gap-2 p-2 px-6 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition md:w-36"
+          className="flex items-center gap-2 p-2 px-6 bg-amber-500 text-gray-900 rounded-full hover:bg-amber-600 transition md:w-36"
         >
           <ChevronLeft size={20} />
           <span>Go Back</span>
@@ -104,7 +104,7 @@ const RecipeDetailsPage = () => {
               onClick={() => setActiveTab("instructions")}
               className={`px-4 py-2 rounded-md transition ${
                 activeTab === "instructions"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-amber-500 text-gray-900"
                   : "bg-gray-700 text-gray-400"
               }`}
             >
@@ -114,7 +114,7 @@ const RecipeDetailsPage = () => {
               onClick={() => setActiveTab("ingredients")}
               className={`px-4 py-2 rounded-md transition ${
                 activeTab === "ingredients"
-                  ? "bg-blue-500 text-white"
+                  ? "bg-amber-500 text-gray-900"
                   : "bg-gray-700 text-gray-400"
               }`}
             >

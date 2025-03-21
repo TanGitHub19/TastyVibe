@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//This will get all the images, name of the cocktails to be deplayed in the drinks page
 export const getCocktails = async (req, res) => {
   const query = req.query.query || "";
   const category = req.query.category || "";
@@ -27,6 +28,7 @@ export const getCocktails = async (req, res) => {
   }
 };
 
+//This will get all the images, name, details, and the other information of the cocktails in the see complete details 
 export const getCocktailDetails = async (req, res) => {
   const { id } = req.params;
 
@@ -45,6 +47,7 @@ export const getCocktailDetails = async (req, res) => {
   }
 };
 
+//This will randomly get cocktails along with their details of image and name to be displayed in the drinks page
 export const getRandomCocktails = async (req, res) => {
   const count = req.query.count || 5;
   let drinks = [];

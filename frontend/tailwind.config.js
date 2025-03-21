@@ -10,11 +10,11 @@ export default {
         inter: ['"Inter"', "sans-serif"],
       },
       backgroundImage: {
-        "bg-1": "url('foodBg.jpg')",
-        "bg-2": "url('food.jpg')",
-        "bg-3": "url('music-2.jpg')",
-        "bg-4": "url('music-3.jpg')",
-        "bg-5": "url('dr.jpg')",
+        "bg-1": "url('/foodBg.jpg')",
+        "bg-2": "url('/food.jpg')",
+        "bg-3": "url('/music-2.jpg')",
+        "bg-4": "url(/'music-3.jpg')",
+        "bg-5": "url('/dr.jpg')",
       },
       keyframes: {
         colorChange: {

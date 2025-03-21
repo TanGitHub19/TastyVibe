@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//This will  all the images, name of the meals to be deplayed in the recipe page
 export const getRecipes = async (req, res) => {
   const query = req.query.query || "";
   const category = req.query.category || "";
@@ -27,6 +28,7 @@ export const getRecipes = async (req, res) => {
   }
 };
 
+//This will get all the images, name, details, and other informations of the meals in the see complete recipe page
 export const getRecipeDetails = async (req, res) => {
   const { id } = req.params;
 
@@ -48,7 +50,7 @@ export const getRecipeDetails = async (req, res) => {
   }
 };
 
-
+//This will randomly get meals along with their details of image and name to be displayed in the recipe page
 export const getRandomRecipes = async (req, res) => {
   const count = req.query.count || 5;
   let meals = [];

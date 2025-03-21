@@ -3,6 +3,7 @@ import { SPOTIFY_CONFIG } from "../spotifyConfig.js";
 import { generateAndSetJWT } from "../authUtils.js";
 const { clientId, clientSecret, redirectUri } = SPOTIFY_CONFIG;
 
+// This is use to login into the users spotify account 
 export const login = (req, res) => {
   const scope =
     "streaming user-library-read user-top-read app-remote-control user-read-playback-state";
@@ -18,7 +19,7 @@ export const login = (req, res) => {
   res.redirect(authUrl);
 };
 
-
+//This is use to redirect the users to after the get authorize in the spotify to music page
 export const callback = async (req, res) => {
   const { code, state } = req.query;
 

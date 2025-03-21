@@ -1,4 +1,4 @@
-import { Menu, X, HomeIcon, Utensils, Music, Wine, User } from "lucide-react";
+import { HomeIcon, Menu, Music, User, Utensils, Wine, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,18 +13,20 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white shadow-md font-poppins">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center ml-5">
-          <div className="flex items-center cursor-pointer">
-            <div className="w-12 h-12 rounded-full overflow-hidden">
-              <img
-                src="/logo.svg"
-                alt="Logo"
-                className="w-full h-full object-cover filter invert "
-              />
+          <Link to="/">
+            <div className="flex items-center cursor-pointer">
+              <div className="w-12 h-12 rounded-full overflow-hidden">
+                <img
+                  src="/logo.svg"
+                  alt="Logo"
+                  className="w-full h-full object-cover filter invert "
+                />
+              </div>
+              <h1 className="text-3xl font-medium font-pacifico text-white">
+                Tasty<span className="text-yellow-400">Vibe</span>
+              </h1>
             </div>
-            <h1 className="text-3xl font-medium font-pacifico text-white">
-              Tasty<span className="text-yellow-400">Vibe</span>
-            </h1>
-          </div>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center space-x-6">

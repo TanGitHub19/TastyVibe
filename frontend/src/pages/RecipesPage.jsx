@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { ArrowRight, Search } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/NavBar";
-import useRecipesStore from "../stores/useRecipesStore";
-import { ArrowRight, Search } from "lucide-react";
 import SkeletonLoading from "../components/SkeletonLoading";
+import useRecipesStore from "../stores/useRecipesStore";
 
 const RecipesPage = () => {
   const { recipes, isRecipesLoading, error, fetchRecipes, selectedCategory } =
@@ -128,7 +128,7 @@ const RecipesPage = () => {
                 />
                 <button
                   onClick={() => handleRecipeClick(recipe.idMeal)}
-                  className="absolute bottom-1 left-4 right-4 bg-gray-700 text-white py-1 rounded-full shadow-lg flex items-center justify-between px-4 text-sm md:text-base"
+                  className="absolute bottom-1 left-4 right-4 bg-amber-500 text-gray-900 py-1 rounded-full shadow-lg flex items-center justify-between px-4 text-sm md:text-base transition duration-300 ease-in-out hover:bg-amber-600 hover:translate-y-[-2px] hover:shadow-2xl"
                 >
                   <span>See Complete Recipe</span>
                   <ArrowRight className="w-4 h-4" />
