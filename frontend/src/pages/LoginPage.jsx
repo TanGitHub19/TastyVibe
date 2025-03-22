@@ -2,7 +2,7 @@ import Navbar from "../components/NavBar";
 
 const LoginPage = () => {
   const handleLogin = () => {
-    window.location.href = "https://tastyvibe.onrender.com/api/spotify/login";
+    window.location.href = "https://tasty-vibe.onrender.com/api/spotify/login";
   };
 
   return (
