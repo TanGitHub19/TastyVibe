@@ -21,7 +21,7 @@ app.use(
 );
 app.use(
   cors({
-    origin: "https://disability-careers-gixk.onrender.com",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );

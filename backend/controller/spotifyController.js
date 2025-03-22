@@ -58,7 +58,7 @@ export const callback = async (req, res) => {
     generateAndSetJWT(jwtPayload, res);
 
     res.redirect(
-      `https://disability-careers-gixk.onrender.com/spotify-data?access_token=${access_token}`
+      `http://localhost:5173/spotify-data?access_token=${access_token}`
     );
   } catch (error) {
     console.error("Error getting access token:", error);
