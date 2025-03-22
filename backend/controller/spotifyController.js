@@ -5,7 +5,7 @@ import { generateAndSetJWT } from "../authUtils.js";
 
 const clientId = "fc681f27f67940dfbf8d181d263491e5"
 const  clientSecret = "9572ad220a6f49ebb50220276135a4ac"
-const SPOTIFY_REDIRECT_URI = "https://tasty-vibe.onrender.com/api/spotify/callback"
+const redirectUri = "https://tasty-vibe.onrender.com/api/spotify/callback"
 
 // This is use to login into the users spotify account 
 export const login = (req, res) => {
