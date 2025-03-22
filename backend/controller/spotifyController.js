@@ -58,7 +58,7 @@ export const callback = async (req, res) => {
     generateAndSetJWT(jwtPayload, res);
 
     res.redirect(
-      `http://localhost:5173/spotify-data?access_token=${access_token}`
+      `https://tastyvibe.onrender.com/spotify-data?access_token=${access_token}`
     );
   } catch (error) {
     console.error("Error getting access token:", error);
